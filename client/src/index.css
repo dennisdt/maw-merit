@@ -201,6 +201,7 @@ a:hover {
 }
 .reward:hover {
   cursor:pointer;
+  filter:brightness(.7);
 }
 .reward-body{
   text-align: center;
