@@ -22,19 +22,19 @@ export default {
       url: '/events',
     },
     {
-      name: 'Workshop/Trainings',
-      url: '/theme/colors',
+      name: 'Workshops',
+      url: '/workshops',
     },
     {
       name: 'FAQs',
-      url: '/theme/colors',
+      url: '/faqs',
     },
     {
       title: true,
       name: 'Organization',
-      wrapper: {            
-        element: '',        
-        attributes: {}        
+      wrapper: {
+        element: '',
+        attributes: {}
       },
       class: ''
     },

@@ -1,0 +1,6 @@
+{
+  "name": "Workshops",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Workshops.js"
+}

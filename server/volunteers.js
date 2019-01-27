@@ -40,13 +40,13 @@ function setPoints(username, pts) {
 
 async function addPoints(username, pts) {
   var data = await getData(username)
-  await setPoints(username, data.points + pts)
+  await setPoints(username, parseInt(data.points) + parseInt(pts))
 }
 
 async function subtractPoints(username, pts) {
   console.log(pts)
   var data = await getData(username)
-  await setPoints(username, data.points - pts)
+  await setPoints(username, parseInt(data.points) - parseInt(pts))
 }
 
 exports.subtractPoints = subtractPoints

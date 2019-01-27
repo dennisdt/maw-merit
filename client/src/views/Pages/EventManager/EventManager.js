@@ -7,8 +7,16 @@ class EventManager extends Component {
     description: "",
     date: "",
     reward: "",
-    events: []
+    events: [],
+    disp_message: false
   };
+
+  renderMessage() {
+    if (this.state.disp_message) {
+      return <div>Event added!</div>;
+    }
+  }
+
   componentDidMount() {
     GetEvents().then(response => {
       console.log(response);
@@ -22,7 +30,10 @@ class EventManager extends Component {
   onChange = e => {
     e.preventDefault();
     const { name, value } = e.target;
-    this.setState({ [name]: value });
+    this.setState({
+      [name]: value,
+      disp_message: false
+    });
   };
   onEdit = () => {};
   onCancel = id => {
@@ -54,7 +65,8 @@ class EventManager extends Component {
             name: "",
             description: "",
             date: "",
-            reward: ""
+            reward: "",
+            disp_message: true
           });
         });
       })
@@ -66,9 +78,15 @@ class EventManager extends Component {
         <Grid className="first">
           <Row>
             <Col md={12}>
-              <h1>Events</h1>
+              <h1>Events Manager</h1>
             </Col>
           </Row>
+          <Row>
+            <Col md={12}>
+              <img className="banner" src="/assets/img/makeawish/vconnex.png" />
+            </Col>
+          </Row>
+          <br/>
           <Row>
             <Col md={12}>
               <h2>Add New Event</h2>
@@ -141,6 +159,7 @@ class EventManager extends Component {
             </Col>
           </Row>
           <br />
+          {this.renderMessage()}
           <br />
           <Row>
             <Col md={12}>

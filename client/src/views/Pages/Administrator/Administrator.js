@@ -52,6 +52,12 @@ class Administrator extends Component {
         </Row>
         <Row>
           <Col md={12}>
+            <img className="banner" src="/assets/img/makeawish/vconnex.png" />
+          </Col>
+        </Row>
+        <br/>
+        <Row>
+          <Col md={12}>
             <FormGroup>
               <Label style={{ fontSize: "18px" }}>Search Username: </Label>
               <input
@@ -92,7 +98,7 @@ class Administrator extends Component {
             <br />
             <Row>
               <Col md={12}>
-                <h2>Pending Completed Rewards:</h2>
+                <h2>Pending Events & Referrals:</h2>
                 <table className="table table-hover table-bordered">
                   <thead>
                     <tr>

@@ -483,14 +483,20 @@ class Dashboard extends Component {
 
     return (
       <div className="animated fadeIn">
+      <Row>
+      <Col md={12}>
+      <h1>Analytics</h1>
+      </Col>
+      </Row>
+
         <Row>
-          <Col>
+          <Col md={12}>
             <Card>
               <CardBody>
                 <Row>
                   <Col sm="5">
-                    <CardTitle className="mb-0">User Activity</CardTitle>
-                    <div className="small text-muted">December 2018</div>
+                    <CardTitle className="mb-0">Volunteer Activity</CardTitle>
+                    <div className="small text-muted">January 2019</div>
                   </Col>
                   <Col sm="7" className="d-none d-sm-inline-block">
                     <Button color="primary" className="float-right"><i className="icon-cloud-download"></i></Button>
@@ -507,41 +513,9 @@ class Dashboard extends Component {
                   <Bar data={mainChart} options={mainChartOpts} height={300} />
                 </div>
               </CardBody>
-              <CardFooter>
-                <Row className="text-center">
-                  <Col sm={12} md className="mb-sm-2 mb-0">
-                    <div className="text-muted">Visits</div>
-                    <strong>29.703 Users (40%)</strong>
-                    <Progress className="progress-xs mt-2" color="success" value="40" />
-                  </Col>
-                  <Col sm={12} md className="mb-sm-2 mb-0 d-md-down-none">
-                    <div className="text-muted">Unique</div>
-                    <strong>24.093 Users (20%)</strong>
-                    <Progress className="progress-xs mt-2" color="info" value="20" />
-                  </Col>
-                  <Col sm={12} md className="mb-sm-2 mb-0">
-                    <div className="text-muted">Pageviews</div>
-                    <strong>78.706 Views (60%)</strong>
-                    <Progress className="progress-xs mt-2" color="warning" value="60" />
-                  </Col>
-                  <Col sm={12} md className="mb-sm-2 mb-0">
-                    <div className="text-muted">New Users</div>
-                    <strong>22.123 Users (80%)</strong>
-                    <Progress className="progress-xs mt-2" color="danger" value="80" />
-                  </Col>
-                  <Col sm={12} md className="mb-sm-2 mb-0 d-md-down-none">
-                    <div className="text-muted">Bounce Rate</div>
-                    <strong>Average Rate (40.15%)</strong>
-                    <Progress className="progress-xs mt-2" color="primary" value="40" />
-                  </Col>
-                </Row>
-              </CardFooter>
             </Card>
           </Col>
         </Row>
-
-
-        
       </div>
     );
   }

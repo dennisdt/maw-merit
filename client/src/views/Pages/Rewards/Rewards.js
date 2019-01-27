@@ -132,7 +132,7 @@ class Rewards extends Component {
           </Row>
           <Row>
             <Col md={12}>
-              <img className="banner" src="/assets/img/makeawish/vconnex.png" />
+              <img className="banner" src="/assets/img/makeawish/trainingbanner.png" />
             </Col>
           </Row>
           <br />
@@ -143,31 +143,28 @@ class Rewards extends Component {
             </Col>
           </Row>
           <Row>
-            <Col
-              md={3}
-              onClick={() => this.selectPrize("Starbucks Giftcard", 100)}
-            >
+            <Col md={3} onClick={() => this.selectPrize("Starbucks Giftcard", 100)}>
               <div className="reward img1" />
             </Col>
-            <Col md={3}>
+            <Col md={3} onClick={() => this.selectPrize("Gift Basket 1", 3000)}>
               <div className="reward img2" />
             </Col>
-            <Col md={3}>
+            <Col md={3} onClick={() => this.selectPrize("Gift Basket 2", 3000)}>
               <div className="reward img3" />
             </Col>
-            <Col md={3}>
+            <Col md={3} onClick={() => this.selectPrize("Gift Basket 3", 3000)}>
               <div className="reward img4" />
             </Col>
-            <Col md={3}>
+            <Col md={3} onClick={() => this.selectPrize("Dollar Shave Club Swag Box", 500)}>
               <div className="reward img5" />
             </Col>
-            <Col md={3}>
+            <Col md={3} onClick={() => this.selectPrize("LA Rams Swag Box", 1000)}>
               <div className="reward img6" />
             </Col>
-            <Col md={3}>
+            <Col md={3} onClick={() => this.selectPrize("Jetblue First Class", 8000)}>
               <div className="reward img7" />
             </Col>
-            <Col md={3}>
+            <Col md={3} onClick={() => this.selectPrize("MAW Executive Mentorship", 10000)}>
               <div className="reward img8" />
             </Col>
           </Row>
@@ -177,7 +174,7 @@ class Rewards extends Component {
           <br />
           <Row>
             <Col md={12}>
-              <h2>Reward History</h2>
+              <h2>Event & Referral History</h2>
             </Col>
           </Row>
           <Row>
@@ -207,7 +204,7 @@ class Rewards extends Component {
           <br />
           <Row>
             <Col md={12}>
-              <h2>Pending Rewards</h2>
+              <h2>Upcoming Rewards & Referrals</h2>
             </Col>
           </Row>
           <Row>
@@ -230,6 +227,52 @@ class Rewards extends Component {
                         </tr>
                       ))
                     : ""}
+                </tbody>
+              </table>
+            </Col>
+          </Row>
+          <br/>
+          <Row>
+            <Col md={12}>
+              <h2>Volunteer of the Month</h2>
+            </Col>
+          </Row>
+          <Row>
+            <Col md={12}>
+              <table className="table table-hover table-bordered">
+                <thead>
+                  <tr>
+                    <th className='rank'>Rank</th>
+                    <th>Volunteer</th>
+                    <th>Points Earned</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Charles Xavier</td>
+                    <td>2200</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Scott Summers</td>
+                    <td>2050</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Tony Stark</td>
+                    <td>1800</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Kent Clark</td>
+                    <td>1750</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Bruce Wayne</td>
+                    <td>1425</td>
+                  </tr>
                 </tbody>
               </table>
             </Col>

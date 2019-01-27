@@ -7,6 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: linear-gradient(to right bottom, #80abdc);
 }
+.rank {
+  width: 7%;
+}
 .table th {
   /* font-weight: normal !important; */
   /* font-size: 20px; */
@@ -17,7 +20,9 @@ body {
   border: 1px solid black;
   border-radius: 5px;
   margin-top: 20px;
-
+  margin-bottom: 20px;
+  background-color: white;
+  box-shadow: 3px 3px 15px #aaa;
 }
 .nowrap {
   white-space: nowrap;
@@ -276,12 +281,25 @@ a:hover {
  width: 200px;
  height: 15px;
 }
+
+.ip2:focus {
+  outline: none;
+}
+
 .button{
  background-color: #002249;
  color: white;
  border-radius: 25px;
  border: 1px solid #002249;
  width: 100px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
 }
 
 tr {background-color: #f2f2f2;}

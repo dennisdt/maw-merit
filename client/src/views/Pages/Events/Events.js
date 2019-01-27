@@ -78,6 +78,10 @@ class Events extends Component {
               />
             </Col>
           </Row>
+          <br/>
+          <Row><Col md={12}>
+          <h3>Upcoming Volunteer Opportunities</h3>
+          </Col></Row>
           <Row>
             <Col md={12}>
               {this.state.searched ? (

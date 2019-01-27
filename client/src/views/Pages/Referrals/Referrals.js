@@ -26,6 +26,7 @@ class Referrals extends Component {
               className="banner"
               src="./assets/img/makeawish/referbanner.png"
             />
+            <br/><br/>
             <h3>
               Collect 100 points for each person you refer who becomes a
               volunteer!
