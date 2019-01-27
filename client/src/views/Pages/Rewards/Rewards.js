@@ -205,36 +205,6 @@ class Rewards extends Component {
           <br />
           <Row>
             <Col md={12}>
-              <h2>Event & Referral History</h2>
-            </Col>
-          </Row>
-          <Row>
-            <Col md={12}>
-              <table className="table table-hover table-bordered">
-                <thead>
-                  <tr>
-                    <th>Date</th>
-                    <th>Description</th>
-                    <th>Point Value</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {this.state.eventHistory
-                    ? this.state.eventHistory.map(history => (
-                        <tr>
-                          <td>{history.date}</td>
-                          <td>{history.description}</td>
-                          <td>{history.point_value}</td>
-                        </tr>
-                      ))
-                    : ""}
-                </tbody>
-              </table>
-            </Col>
-          </Row>
-          <br />
-          <Row>
-            <Col md={12}>
               <h2>Upcoming Events & Referrals</h2>
             </Col>
           </Row>
@@ -255,6 +225,36 @@ class Rewards extends Component {
                           <td>{event.date}</td>
                           <td>{event.description}</td>
                           <td>{event.point_value}</td>
+                        </tr>
+                      ))
+                    : ""}
+                </tbody>
+              </table>
+            </Col>
+          </Row>
+          <br />
+          <Row>
+            <Col md={12}>
+              <h2>Event & Referral History</h2>
+            </Col>
+          </Row>
+          <Row>
+            <Col md={12}>
+              <table className="table table-hover table-bordered">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Point Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {this.state.eventHistory
+                    ? this.state.eventHistory.map(history => (
+                        <tr>
+                          <td>{history.date}</td>
+                          <td>{history.description}</td>
+                          <td>{history.point_value}</td>
                         </tr>
                       ))
                     : ""}
