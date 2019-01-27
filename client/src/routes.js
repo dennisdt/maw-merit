@@ -42,6 +42,8 @@ const Rewards = React.lazy(() => import('./views/Pages/Rewards'));
 const EventManager = React.lazy(() => import('./views/Pages/EventManager'));
 const Referrals = React.lazy(() => import('./views/Pages/Referrals'));
 const UserDash = React.lazy(() => import('./views/Pages/UserDash'));
+const Workshops = React.lazy(() => import('./views/Pages/Workshops'));
+const FAQs = React.lazy(() => import('./views/Pages/FAQs'));
 
 
 
@@ -94,6 +96,8 @@ const routes = [
   { path: '/eventmanager', exact: true, name: 'EventManager', component: EventManager },
   { path: '/referrals', exact: true, name: 'Referrals', component: Referrals },
   { path: '/userdash', exact: true, name: 'UserDash', component: UserDash },
+  { path: '/workshops', exact: true, name: 'Workshops', component: Workshops },
+  { path: '/faqs', exact: true, name: 'FAQs', component: FAQs }
 ];
 
 export default routes;
