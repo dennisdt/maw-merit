@@ -12,7 +12,7 @@ class Referrals extends Component {
 
   renderMessage() {
     if (this.state.disp_message) {
-      return <p>Referral sent!</p>;
+      return <p className="disp-message">Referral sent!</p>;
     }
   }
 

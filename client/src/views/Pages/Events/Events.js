@@ -10,7 +10,7 @@ class Events extends Component {
 
   renderMessage() {
     if (this.state.disp_message) {
-      return <p>Thanks for signing up!</p>;
+      return <p className="disp-message">Thanks for signing up!</p>;
     }
   }
 

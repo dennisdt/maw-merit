@@ -13,7 +13,7 @@ class EventManager extends Component {
 
   renderMessage() {
     if (this.state.disp_message) {
-      return <div>Event added!</div>;
+      return <div className="disp-message">Event added!</div>;
     }
   }
 
