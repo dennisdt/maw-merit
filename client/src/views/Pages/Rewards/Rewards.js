@@ -146,13 +146,13 @@ class Rewards extends Component {
             <Col md={3} onClick={() => this.selectPrize("Starbucks Giftcard", 100)}>
               <div className="reward img1" />
             </Col>
-            <Col md={3} onClick={() => this.selectPrize("Gift Basket 1", 3000)}>
+            <Col md={3} onClick={() => this.selectPrize("MAW Gift Basket", 3000)}>
               <div className="reward img2" />
             </Col>
-            <Col md={3} onClick={() => this.selectPrize("Gift Basket 2", 3000)}>
+            <Col md={3} onClick={() => this.selectPrize("Target Giftcard", 500)}>
               <div className="reward img3" />
             </Col>
-            <Col md={3} onClick={() => this.selectPrize("Gift Basket 3", 3000)}>
+            <Col md={3} onClick={() => this.selectPrize("MAW Front Page Feature", 1000)}>
               <div className="reward img4" />
             </Col>
             <Col md={3} onClick={() => this.selectPrize("Dollar Shave Club Swag Box", 500)}>
