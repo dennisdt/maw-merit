@@ -5,6 +5,7 @@ body {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to right bottom, #80abdc);
 }
 .table th {
   /* font-weight: normal !important; */
@@ -82,6 +83,7 @@ a:hover {
  padding: 10px;
  width: 50%;
  font-size: 20px;
+ 
 }
 .log-table th {
   font-weight: normal;
@@ -208,55 +210,55 @@ a:hover {
   padding: 20px; /* Some padding */
 }
 .img1 {
-  background-image: url("https://files.slack.com/files-pri/TFLCGV43Z-FFR6LKT4P/starbucksgift1.png");
+  background-image: url("./assets/img/makeawish/swagstarbucks.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 60% 50%;
 }
 .img2 {
-  background-image: url("https://files.slack.com/files-pri/TFLCGV43Z-FFPCKK3U0/wishswag.jpg");
+  background-image: url("./assets/img/makeawish/swagwish_720.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 60% 50%;
 
 }
 .img3 {
-  background-image: url("https://files.slack.com/files-pri/TFLCGV43Z-FFQAR3LAH/innoutgiftcard.jpg");
+  background-image: url("./assets/img/makeawish/swagwish_720.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position:70% 50%;
 
 }
 .img4 {
-  background-image: url("https://files.slack.com/files-pri/TFLCGV43Z-FFQAR3LAH/innoutgiftcard.jpg");
+  background-image: url("./assets/img/makeawish/swagwish_720.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position:70% 50%;
 
 }
 .img5 {
-  background-image: url("https://files.slack.com/files-pri/TFLCGV43Z-FFQ4RAK6W/laramsbox.jpg");
+  background-image: url("./assets/img/makeawish/swagdsc_720.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position:70% 50%;
 
 }
 .img6 {
-  background-image: url("https://files.slack.com/files-pri/TFLCGV43Z-FFQ2LDEJF/capturedollarshaveclub.png");
+  background-image: url("./assets/img/makeawish/capturelarams_720.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position:70% 50%;
 
 }
 .img7 {
-  background-image: url("https://files.slack.com/files-pri/TFLCGV43Z-FFPHDUYHX/capturelarams.png");
+  background-image: url("./assets/img/makeawish/capturejetblue_720.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position:70% 50%;
 
 }
 .img8 {
-  background-image: url("https://files.slack.com/files-pri/TFLCGV43Z-FFPCEB2F2/mentoring.jpg");
+  background-image: url("./assets/img/makeawish/mentoringpoints.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position:70% 50%;
@@ -282,7 +284,7 @@ a:hover {
  width: 100px;
 }
 
-tr:nth-child(even) {background-color: #f2f2f2;}
+tr {background-color: #f2f2f2;}
 
 .background{
  background-image: linear-gradient(to right top, #002249, #002b5d, #003571, #003f86, #00499b, #354da8, #5550b3, #7251bc
