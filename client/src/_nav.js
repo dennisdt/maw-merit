@@ -10,16 +10,16 @@ export default {
       class: ''             // optional class names space delimited list for title item ex: "text-center"
     },
     {
-      name: 'Rewards',
-      url: '/rewards',
+      name: 'Events',
+      url: '/events',
     },
     {
       name: 'Refer-A-Friend',
       url: '/referrals',
     },
     {
-      name: 'Events',
-      url: '/events',
+      name: 'Rewards',
+      url: '/rewards',
     },
     {
       name: 'Workshops',
@@ -43,12 +43,12 @@ export default {
       url: '/administrator',
     },
     {
-      name: 'Analytics',
-      url: '/dashboard',
-    },
-    {
       name: 'Events Manager',
       url: '/eventmanager',
+    },
+    {
+      name: 'Analytics',
+      url: '/dashboard',
     },
   ],
 };

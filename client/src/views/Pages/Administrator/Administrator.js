@@ -11,8 +11,15 @@ class Administrator extends Component {
     points: null,
     joined: "",
     pendingRewards: [],
-    searched: false
+    searched: false,
+    disp_message: false
   };
+
+  renderMessage() {
+    if (this.state.disp_message) {
+      return <p>Reward approved!</p>
+    }
+  }
 
   searchUser = () => {
     GetUserInfo(this.state.username).then(response => {
@@ -30,11 +37,15 @@ class Administrator extends Component {
   onChange = e => {
     e.preventDefault();
     const { name, value } = e.target;
-    this.setState({ [name]: value });
+    this.setState({
+      [name]: value,
+      disp_message: false
+    });
   };
   onRedeem = id => {
     RedeemReward(this.state.username, id).then(() => {
       this.searchUser();
+      this.setState({disp_message: true})
     });
   };
   onCancel = id => {
@@ -99,6 +110,7 @@ class Administrator extends Component {
             <Row>
               <Col md={12}>
                 <h2>Pending Events & Referrals:</h2>
+                {this.renderMessage()}
                 <table className="table table-hover table-bordered">
                   <thead>
                     <tr>

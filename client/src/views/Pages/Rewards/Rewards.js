@@ -85,7 +85,7 @@ class Rewards extends Component {
       return (
         <Row>
           <Col md={12}>
-            <div className="confirm">Insufficient points!</div>
+            <div className="confirm">Insufficient Points!</div>
           </Col>
         </Row>
       );
@@ -275,7 +275,7 @@ class Rewards extends Component {
                   <tr>
                     <th className="rank">Rank</th>
                     <th>Volunteer</th>
-                    <th>Points Earned</th>
+                    <th>Points Accumulated</th>
                   </tr>
                 </thead>
                 <tbody>

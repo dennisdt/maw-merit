@@ -4,8 +4,16 @@ import { GetEvents, SignUpEvent, GetData } from "../services/events.service";
 class Events extends Component {
   state = {
     events: [],
-    searched: false
+    searched: false,
+    disp_message: false
   };
+
+  renderMessage() {
+    if (this.state.disp_message) {
+      return <p>Thanks for signing up!</p>;
+    }
+  }
+
   componentDidMount() {
     GetEvents().then(response => {
       console.log(response);
@@ -55,7 +63,8 @@ class Events extends Component {
           }
           this.setState({
             events: filteredEvents,
-            searched: true
+            searched: true,
+            disp_message: true
           });
         });
       });
@@ -82,6 +91,7 @@ class Events extends Component {
           <Row><Col md={12}>
           <h3>Upcoming Volunteer Opportunities</h3>
           <p>Share events on social media to collect points!</p>
+          {this.renderMessage()}
           </Col></Row>
           <Row>
             <Col md={12}>
