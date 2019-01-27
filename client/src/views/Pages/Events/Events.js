@@ -81,6 +81,7 @@ class Events extends Component {
           <br/>
           <Row><Col md={12}>
           <h3>Upcoming Volunteer Opportunities</h3>
+          <p>Share events on social media to collect points!</p>
           </Col></Row>
           <Row>
             <Col md={12}>
@@ -93,7 +94,8 @@ class Events extends Component {
                         <th>Date</th>
                         <th>Description</th>
                         <th>Reward</th>
-                        <th>Sign Up</th>
+                        <th className="nowrap">Sign Up</th>
+                        <th>Share!</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -106,6 +108,11 @@ class Events extends Component {
                               <td>{event.reward}</td>
                               <td onClick={() => this.onSignUp(event.id)}>
                                 <i className="fas fa-sign-in-alt" />
+                              </td>
+                              <td className="nowrap">
+                                <i className="fab fa-facebook-f"></i>&nbsp;&nbsp;
+                                <i className="fa fa-instagram"></i>&nbsp;&nbsp;
+                                <i className="fa fa-twitter" aria-hidden="true"></i>
                               </td>
                             </tr>
                           ))

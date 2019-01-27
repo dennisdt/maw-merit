@@ -88,7 +88,7 @@ a:hover {
  padding: 10px;
  width: 50%;
  font-size: 20px;
- 
+
 }
 .log-table th {
   font-weight: normal;
@@ -155,8 +155,11 @@ a:hover {
 .fa:hover {
   cursor:pointer;
 }
-.fa {
+.fa, .fas, .fab {
   color: #0057b8
+}
+.fab:hover {
+  cursor: pointer;
 }
 .fa-check:hover{
   cursor:pointer;
