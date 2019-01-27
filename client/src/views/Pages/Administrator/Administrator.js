@@ -17,7 +17,7 @@ class Administrator extends Component {
 
   renderMessage() {
     if (this.state.disp_message) {
-      return <p>Reward approved!</p>
+      return <p className="disp-message">Reward approved!</p>;
     }
   }
 
@@ -45,7 +45,7 @@ class Administrator extends Component {
   onRedeem = id => {
     RedeemReward(this.state.username, id).then(() => {
       this.searchUser();
-      this.setState({disp_message: true})
+      this.setState({ disp_message: true });
     });
   };
   onCancel = id => {
@@ -66,7 +66,7 @@ class Administrator extends Component {
             <img className="banner" src="/assets/img/makeawish/vconnex.png" />
           </Col>
         </Row>
-        <br/>
+        <br />
         <Row>
           <Col md={12}>
             <FormGroup>
