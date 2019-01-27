@@ -132,7 +132,10 @@ class Rewards extends Component {
           </Row>
           <Row>
             <Col md={12}>
-              <img className="banner" src="/assets/img/makeawish/trainingbanner.png" />
+              <img
+                className="banner"
+                src="/assets/img/makeawish/trainingbanner.png"
+              />
             </Col>
           </Row>
           <br />
@@ -143,28 +146,56 @@ class Rewards extends Component {
             </Col>
           </Row>
           <Row>
-            <Col md={3} onClick={() => this.selectPrize("Starbucks Giftcard", 100)}>
+            <Col
+              md={3}
+              onClick={() => this.selectPrize("Starbucks Giftcard", 100)}
+            >
               <div className="reward img1" />
             </Col>
-            <Col md={3} onClick={() => this.selectPrize("MAW Gift Basket", 3000)}>
+            <Col
+              md={3}
+              onClick={() => this.selectPrize("Target Giftcard", 500)}
+            >
               <div className="reward img2" />
             </Col>
-            <Col md={3} onClick={() => this.selectPrize("Target Giftcard", 500)}>
+            <Col
+              md={3}
+              onClick={() =>
+                this.selectPrize("Dollar Shave Club Swag Box", 500)
+              }
+            >
               <div className="reward img3" />
             </Col>
-            <Col md={3} onClick={() => this.selectPrize("MAW Front Page Feature", 1000)}>
+            <Col
+              md={3}
+              onClick={() => this.selectPrize("MAW Front Page Feature", 1000)}
+            >
               <div className="reward img4" />
             </Col>
-            <Col md={3} onClick={() => this.selectPrize("Dollar Shave Club Swag Box", 500)}>
+            <Col
+              md={3}
+              onClick={() => this.selectPrize("LA Rams Swag Box", 1000)}
+            >
               <div className="reward img5" />
             </Col>
-            <Col md={3} onClick={() => this.selectPrize("LA Rams Swag Box", 1000)}>
+            <Col
+              md={3}
+              onClick={() => this.selectPrize("MAW Gift Basket", 3000)}
+            >
               <div className="reward img6" />
             </Col>
-            <Col md={3} onClick={() => this.selectPrize("Jetblue First Class", 8000)}>
+            <Col
+              md={3}
+              onClick={() => this.selectPrize("Jetblue First Class", 8000)}
+            >
               <div className="reward img7" />
             </Col>
-            <Col md={3} onClick={() => this.selectPrize("MAW Executive Mentorship", 10000)}>
+            <Col
+              md={3}
+              onClick={() =>
+                this.selectPrize("MAW Executive Mentorship", 10000)
+              }
+            >
               <div className="reward img8" />
             </Col>
           </Row>
@@ -204,7 +235,7 @@ class Rewards extends Component {
           <br />
           <Row>
             <Col md={12}>
-              <h2>Upcoming Rewards & Referrals</h2>
+              <h2>Upcoming Events & Referrals</h2>
             </Col>
           </Row>
           <Row>
@@ -231,7 +262,7 @@ class Rewards extends Component {
               </table>
             </Col>
           </Row>
-          <br/>
+          <br />
           <Row>
             <Col md={12}>
               <h2>Volunteer of the Month</h2>
@@ -242,7 +273,7 @@ class Rewards extends Component {
               <table className="table table-hover table-bordered">
                 <thead>
                   <tr>
-                    <th className='rank'>Rank</th>
+                    <th className="rank">Rank</th>
                     <th>Volunteer</th>
                     <th>Points Earned</th>
                   </tr>

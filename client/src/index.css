@@ -221,35 +221,35 @@ a:hover {
   background-position: 60% 50%;
 }
 .img2 {
-  background-image: url("./assets/img/makeawish/swagwish_720.png");
+  background-image: url("./assets/img/makeawish/targetgiftcard.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 60% 50%;
 
 }
 .img3 {
-  background-image: url("./assets/img/makeawish/targetgiftcard.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position:70% 50%;
-
-}
-.img4 {
-  background-image: url("./assets/img/makeawish/swagwish_720.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position:70% 50%;
-
-}
-.img5 {
   background-image: url("./assets/img/makeawish/swagdsc_720.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position:70% 50%;
 
 }
-.img6 {
+.img4 {
+  background-image: url("./assets/img/makeawish/swagdsc_720.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:70% 50%;
+
+}
+.img5 {
   background-image: url("./assets/img/makeawish/capturelarams_720.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:70% 50%;
+
+}
+.img6 {
+  background-image: url("./assets/img/makeawish/swagwish_720.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position:70% 50%;
