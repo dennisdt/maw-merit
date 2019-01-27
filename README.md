@@ -1,1 +1,1 @@
-# maw-merit
+# merit
